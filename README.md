@@ -1,0 +1,1 @@
+this is a mouse sales product card that could use for an ecommerce store

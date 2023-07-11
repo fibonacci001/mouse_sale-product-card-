@@ -1,0 +1,90 @@
+body {
+    margin: auto 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto 0;
+}
+.card {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background-color: #191919;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 50px ;
+}
+
+.card::before {
+    content: '';
+position: absolute;
+top: -50%;
+width: 100%;
+height: 100%;
+background-color:  #ffce00;
+transform: skewY(345deg);
+transition: 0.5s;
+
+}
+.card:hover::before {
+  transform: skewY(390deg);  
+}
+.card::after {
+    content: 'CORSAIR';
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 7rem;
+    opacity: 0.2;
+}
+
+.mouse-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.mouse {
+    height: 300px;
+    width: auto;
+    z-index: 1;
+    
+}
+.product-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1px;
+    color: white;
+    position: relative;
+}
+h2 {
+    
+    z-index: 2;
+}
+h3 .bold {
+
+    font-size: 17px;
+}
+h3 {
+    margin-top: 2px;
+}
+.card .product-text .buy {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #ffce00;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    position: relative;
+     top: 100px;
+    transition: 0.5s;
+}
+.card:hover .product-text .buy {
+    top: 0px;
+    opacity: 1;
+}
